@@ -11,4 +11,4 @@
 
  下载好后，请将sql语句导入到自己的mysql数据库中，默认密码都是123，将oss服务中的阿里云AccessKey改为你自己的。
  
- 前端代码地址：
+ 前端代码地址：https://github.com/Alickess/NewPlusBlog-VUE/tree/master
