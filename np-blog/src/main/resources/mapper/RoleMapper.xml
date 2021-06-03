@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zwu.dao.RoleMapper">
+
+    <resultMap id="RoleResultMap" type="com.zwu.blog.vo.RoleVO">
+        <id column="id" property="id" ></id>
+        <id column="create_time" property="createTime"></id>
+        <id column="update_time" property="updateTime"></id>
+        <id column="deleted" property="deleted"></id>
+        <id column="role_name" property="roleName"></id>
+        <id column="description" property="description"></id>
+        <id column="status" property="status"></id>
+        <collection property="permissionList" ofType="com.zwu.blog.entity.Permission">
+            <id column="id1" property="id" ></id>
+            <id column="create_time1" property="createTime"></id>
+            <id column="update_time1" property="updateTime"></id>
+            <id column="deleted1" property="deleted"></id>
+            <id column="code" property="code"></id>
+            <id column="description1" property="description"></id>
+            <id column="url" property="url"></id>
+        </collection>
+    </resultMap>
+
+    <select id="findAll" resultMap="RoleResultMap">
+        select
+        r.*,p.id id1,p.create_time create_time1,p.update_time update_time1,p.code,
+        p.deleted deleted1,p.description description1,p.url
+        from role r
+        left join role_permission rp ON rp.role_id =r.id and rp.deleted = 0
+        left join permission p on p.id = rp.permission_id and p.deleted = 0
+        where r.deleted = 0 order by r.id asc
+    </select>
+
+    <select id="findById" parameterType="Long" resultMap="RoleResultMap">
+        select
+        r.*,p.id id1,p.create_time create_time1,p.update_time update_time1,p.code,
+        p.deleted deleted1,p.description description1,p.url
+        from role r
+        left join role_permission rp ON rp.role_id =r.id and rp.deleted = 0
+        left join permission p on p.id = rp.permission_id and p.deleted = 0
+        where r.deleted = 0 and r.id=#{id}
+    </select>
+</mapper>

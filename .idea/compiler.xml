@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="security-client" />
+        <module name="np-oss" />
+        <module name="np-security" />
+        <module name="np-common" />
+        <module name="np-blog" />
+        <module name="np-model" />
+        <module name="np-eureka" />
+        <module name="np-gateway" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

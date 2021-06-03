@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/np-blog/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/np-blog/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/np-client/oss-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/np-client/oss-client/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/np-client/security-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/np-client/security-client/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/np-common/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/np-common/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/np-eureka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/np-eureka/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/np-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/np-gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/np-model/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/np-model/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/np-oss/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/np-oss/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/np-security/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/np-security/src/main/resources" charset="UTF-8" />
+  </component>
+</project>
